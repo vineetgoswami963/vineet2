@@ -18,13 +18,11 @@ export default function Home() {
         <Projectss />
       </main>
     <main className="flex flex-col items-center px-4">
-      {/* <Particle/> */}
       <Intro />
       <SectionDivider />
       <About />
       <Projects />
       <Skills /> 
-      {/* <Experience /> */}
       <Contact />
     </main>
     </div>
