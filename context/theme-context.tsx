@@ -13,7 +13,9 @@ type ThemeContextType = {
   toggleTheme: () => void;
 };
 
-const ThemeContext = createContext<ThemeContextType | null>(null);
+const ThemeContext = createContext<ThemeContextType >({theme:"dark",
+  toggleTheme: () => {}
+});
 
 export default function ThemeContextProvider({
   children,
@@ -33,7 +35,7 @@ export default function ThemeContextProvider({
   };
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem("theme") as Theme | null;
+    const localTheme = window.localStorage.getItem("theme") as Theme | "dark";
 
     if (localTheme) {
       setTheme(localTheme);
