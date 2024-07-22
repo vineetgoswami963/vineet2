@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "run dev",
     "lint": "next lint"
   },
   "dependencies": {
@@ -21,13 +21,12 @@
     "eslint-config-next": "13.4.7",
     "framer-motion": "^10.18.0",
     "framer-motion-3d": "^11.0.8",
-    "next": "canary",
+    "next": "^14.1.1",
     "node-sass": "npm:sass@^1.55.0",
     "postcss": "8.4.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.51.0",
-    "react-hot-toast": "^2.4.1",
+    "react-hot-toast": "^2.4.1", 
     "react-icons": "^4.10.1",
     "react-intersection-observer": "^9.5.2",
     "react-tsparticles": "^2.12.2",
